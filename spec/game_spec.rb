@@ -1,5 +1,6 @@
 require 'game'
 require 'board'
+require 'ship'
 
 describe Game do
   # subject(:game) {described_class.new(board_class)}     # game is instantiated with a fake board_class object that acts like a board
@@ -28,6 +29,12 @@ subject(:game) {described_class.new(board)}
                                                  [0,0,0,0,0,0,0,0,0,0],
                                                  [0,0,0,0,0,0,0,0,0,0]
                                                  ])
+    end
+  end
+
+  context '#placing a ship' do
+    it 'allows a user to place a ship on the grid' do
+
     end
   end
 end
