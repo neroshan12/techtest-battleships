@@ -34,7 +34,19 @@ subject(:game) {described_class.new(board)}
 
   context '#placing a ship' do
     it 'allows a user to place a ship on the grid' do
-
+      ship = Ship.new
+      game.place_ship( x, y, size)
+      expect(game.gamegrid(board)).to eq([[3,3,3,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0],
+                                                 [0,0,0,0,0,0,0,0,0,0]
+                                                 ])
     end
   end
 end

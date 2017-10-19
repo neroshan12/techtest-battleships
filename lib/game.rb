@@ -13,4 +13,5 @@ class Game
   def gamegrid(board)
     @board.grid
   end
+
 end
