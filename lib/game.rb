@@ -1,4 +1,6 @@
 require './lib/board'
+require './lib/player'
+require './lib/ship'
 
 class Game
   # def initialize(board_class = Board)  # here if nothing is passed in the Board will be passed in and L6 board_class will be board
@@ -6,9 +8,9 @@ class Game
   #   @board = board_class.new
   # end
 
-  attr_reader :player
+   attr_reader :player
 
-  def initialize(board = Board.new, player = Player.new(''))
+  def initialize(board = Board.new, player = Player.new())
     @board = board
     @player = player
   end

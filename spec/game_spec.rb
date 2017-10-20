@@ -33,7 +33,7 @@ subject(:game) {described_class.new(board, player)}
                                                  ])
     end
     it 'initializes with a new player' do
-      expect(game.player).to eq('Player 1')
+      expect(game.player.name).to eq('Player 1')
     end
   end
 
