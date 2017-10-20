@@ -6,8 +6,11 @@ class Game
   #   @board = board_class.new
   # end
 
-  def initialize(board = Board.new)
+  attr_reader :player
+
+  def initialize(board = Board.new, player = Player.new(''))
     @board = board
+    @player = player
   end
 
   def gamegrid(board)
